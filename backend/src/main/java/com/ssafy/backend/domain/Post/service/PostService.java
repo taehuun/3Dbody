@@ -1,15 +1,3 @@
-package com.ssafy.backend.domain.Post.service;
-
-import com.ssafy.backend.domain.Post.dto.PostDto;
-
-import java.util.List;
-import java.util.Map;
-
-public interface PostService {
-    void writePost(PostDto postDto) throws Exception;
-    List<PostDto> listPost(Map<String, String> map) throws Exception;
-    PostDto getPost(int postId) throws Exception;
-    void updateHit(int postId) throws Exception;
-    void modifyPost(PostDto postDto) throws Exception;
-    void deletePost(PostDto postDto) throws Exception;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:15da42f8bf00ddd08031f089a5d23778fbe187bc6938d902fde4cd23bc50aef8
+size 671
