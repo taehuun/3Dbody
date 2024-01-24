@@ -1,17 +1,3 @@
-package com.ssafy.backend.global.entity;
-
-import jakarta.persistence.MappedSuperclass;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
-
-import java.time.LocalDateTime;
-
-@MappedSuperclass
-public abstract class BaseEntity {
-
-    @CreatedDate
-    private LocalDateTime createdAt;
-    @LastModifiedDate
-    private LocalDateTime updatedAt;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:96fafab7983dd7a43c9e882e40b7929d1a575a7c790208be061b01ef423b258b
+size 670
