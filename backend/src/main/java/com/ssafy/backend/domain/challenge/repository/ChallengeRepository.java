@@ -1,7 +1,3 @@
-package com.ssafy.backend.domain.challenge.repository;
-
-import com.ssafy.backend.domain.challenge.entity.Challenge;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface ChallengeRepository extends JpaRepository<Challenge, Long> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:20f27a35bbd15e8ca217dac74d24d67009c7b22b00fe14c61e7ab38664a8025c
+size 860

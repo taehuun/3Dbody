@@ -1,22 +1,3 @@
-package com.ssafy.backend.domain.challenge.dto;
-
-import lombok.Data;
-
-import java.time.LocalDateTime;
-
-@Data
-public class ChallengeDto {
-
-    private Long challengeId;
-    // private UserDto userDto;
-    private String title;
-    private String content;
-    private String thumbnail;
-    private String image;
-    private int entry;
-    private int hit;
-    private String status;
-    private LocalDateTime startDate;
-    private LocalDateTime endDate;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6b58743ace620e8d7d69793bd476eddac7beabf2548fb5f35b68c99bc5d58ef7
+size 626
