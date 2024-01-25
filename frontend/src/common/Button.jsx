@@ -1,17 +1,3 @@
-const Button = (props) => {
-  let buttonCss = "";
-
-  if (props.style === "small") {
-    buttonCss = "btn-sm"; // style에 따라 바꿔지게
-  } else if (props.style === "large") {
-    buttonCss = "btn-lg"; // style에 따라 바꿔지게
-  }
-
-  return (
-    <button className={buttonCss} onClick={props.onClick}>
-      {props.buttonName}
-    </button>
-  );
-};
-
-export default Button;
+version https://git-lfs.github.com/spec/v1
+oid sha256:799772d7b05eb42f402236f5de178aac3e9e4dbe9f1332370be33e0095332eed
+size 559
