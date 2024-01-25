@@ -1,18 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        강성권 잔다
-      </div>
-    </>
-  )
-}
-
-export default App
+version https://git-lfs.github.com/spec/v1
+oid sha256:e8395c0ebd6ad48685b59e3c140e71b55e0091dd9ea5ee5fee557976eaa88035
+size 585
