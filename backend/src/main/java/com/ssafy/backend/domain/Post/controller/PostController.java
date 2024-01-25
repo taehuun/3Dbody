@@ -1,9 +1,3 @@
-package com.ssafy.backend.domain.Post.controller;
-
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-@RequestMapping("api")
-public class PostController {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fec042825d29a74978c42bc41296435bd7afb197d6429a71b665214ade49b808
+size 845

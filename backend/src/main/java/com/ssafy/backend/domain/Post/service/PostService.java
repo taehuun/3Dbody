@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:15da42f8bf00ddd08031f089a5d23778fbe187bc6938d902fde4cd23bc50aef8
-size 671
+package com.ssafy.backend.domain.Post.service;
+
+import com.ssafy.backend.domain.Post.dto.PostDto;
+
+public interface PostService {
+
+    public Long save(PostDto requestDto, Long userId);     //글쓰기
+    public PostDto findById(Long id);                   //글 조회
+}
