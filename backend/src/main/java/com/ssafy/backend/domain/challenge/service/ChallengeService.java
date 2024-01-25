@@ -1,18 +1,3 @@
-package com.ssafy.backend.domain.challenge.service;
-
-import com.ssafy.backend.domain.challenge.dto.ChallengeListResponseDto;
-
-import java.util.List;
-
-public interface ChallengeService {
-
-    // 참여가능 챌린지 목록
-    List<ChallengeListResponseDto> getProceedingChallengeList();
-
-    // 참여중 챌린지 목록
-    List<ChallengeListResponseDto> getJoiningChallengeList(Long userId);
-
-    // 종료된 챌린지 목록
-    List<ChallengeListResponseDto> getFinishedChallengeList();
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2e76eb0897c30895e1d0186445d4b6320005e0870c5a096e99f1aafc2ba8c1e5
+size 672
