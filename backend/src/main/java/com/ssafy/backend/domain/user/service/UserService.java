@@ -1,16 +1,3 @@
-package com.ssafy.backend.domain.user.service;
-
-import com.ssafy.backend.domain.user.entity.User;
-
-public interface UserService {
-
-    void updatePassword(Long userId, String password);
-    String getRandomNickname();
-    String nicknameGenerator();
-    User getUserInfo(Long userId);
-    void updateUser(Long userId);
-    void updateStatus(Long userId);
-    void updateNickname(Long userId, String nickname);
-    boolean duplicateCheckNickname(String nickname);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:22ed771bd8e2ee3f9ff0640b19cf90953d391cb25f678ea693326444e4893df9
+size 660
