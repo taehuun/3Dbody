@@ -1,19 +1,3 @@
-import "./ChallengeCard.css"
-
-const ChallengeCard = () => {
-  return (
-    <div className="card">
-      <div className="content">
-        <div>
-          <img className="poster" src="challenge/example.jpg" alt="..." />
-        </div>
-        <div className="title">챌린지 제목</div>
-        <div className="description">
-          챌린지 내용입니다
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default ChallengeCard;
+version https://git-lfs.github.com/spec/v1
+oid sha256:2226342aeaa2da0fe9c8dbafc04bbba41c9529f195aa5f17e227ce98bb24ab50
+size 567
