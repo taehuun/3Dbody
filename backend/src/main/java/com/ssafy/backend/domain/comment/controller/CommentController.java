@@ -1,17 +1,3 @@
-package com.ssafy.backend.domain.comment.controller;
-
-import com.ssafy.backend.domain.comment.service.CommentService;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@Slf4j
-@RestController
-@RequestMapping("/api/comment")
-@RequiredArgsConstructor
-public class CommentController {
-
-    private final CommentService commentService;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c350217b72c9902dbef06427e376cc581ad9703454d3a600c0bb4d93d25fd7d5
+size 1487
