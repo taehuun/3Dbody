@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c1f7060d12fbf76a6d681f9e728a098e10395354ab25cdae75772b932f480307
-size 1186
+import ToggleTap from "../../components/common/ToggleTap";
+import PageTitle from "../../components/common/PageTitle";
+import ChallengeParticipating from './ChallengeParticipatingPage';
+
+const Challenge = () => {
+  return (
+    <div>
+      <PageTitle pageTitle={"챌린지"} />
+      <ToggleTap leftTitle={"참여 가능"} rightTitle={"참여 중"}/>
+      <ChallengeParticipating />
+    </div>
+  );
+};
+
+export default Challenge;
