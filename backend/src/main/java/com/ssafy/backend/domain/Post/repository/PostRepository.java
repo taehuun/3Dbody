@@ -1,11 +1,3 @@
-package com.ssafy.backend.domain.Post.repository;
-
-
-import com.ssafy.backend.domain.Post.entity.Post;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface PostRepository extends JpaRepository<Post, Long> {
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:88e9ef97a31694fe94446a4a2b8dc91bb2b8e9cb6c0905810adfea10e84f4ef3
+size 298
