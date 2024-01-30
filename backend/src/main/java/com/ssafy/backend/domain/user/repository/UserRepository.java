@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5555ef3ca2a91bd30f83a2e10d97cba0797c08d14ef68cddb1bb39ed8be7a7c
-size 475
+package com.ssafy.backend.domain.user.repository;
+
+import com.ssafy.backend.domain.user.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+
+    int countByEmail(String email);
+    int countByNickname(String nickname);
+    Optional<User> findByEmail(String email);
+    boolean existsByEmail(String email);
+    boolean existsByNickname(String nickname);
+}

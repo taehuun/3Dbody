@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d9571a7325ca5556ca9b7cafa4caa983fbd740dc3f7cfcd3ff8d02d3e23d9ab6
-size 191
+package com.ssafy.backend.domain.challenge.entity;
+
+public enum Status {
+
+    BEFORE, // 시작전 챌린지
+    PROCEEDING, // 진행중인 챌린지
+    FINISHED; // 종료된 챌린지
+
+}
