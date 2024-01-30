@@ -1,20 +1,3 @@
-package com.ssafy.backend.domain.comment.dto;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
-
-@Data
-public class CommentRequestDto {
-
-    private String content;
-
-    @JsonProperty("user_id")
-    private Long userId;
-
-    @JsonProperty("challenge_id")
-    private Long challengeId;
-
-    @JsonProperty("parent_id")
-    private Long parentId;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fb926af69c6c193d48a0d004922edc77d55558f67c2da19517b436ea7528407c
+size 433
