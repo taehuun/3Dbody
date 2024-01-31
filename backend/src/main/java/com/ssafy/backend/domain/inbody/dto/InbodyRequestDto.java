@@ -1,24 +1,3 @@
-package com.ssafy.backend.domain.inbody.dto;
-
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-import java.time.LocalDateTime;
-
-@Getter
-@NoArgsConstructor
-public class InbodyRequestDto {
-
-    private float height;
-    private  float weight;
-    private int bmr;
-    private float muscle;
-    private float fatMass;
-    private float fatPer;
-    private float tbw;
-    private float whr;
-    private float bmi;
-    private int score;
-    private LocalDateTime date;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:34aa7db007824bb299bb4ed08531a0eeb85073ef6b87feaf8f80d19d2c56967b
+size 1036
