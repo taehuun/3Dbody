@@ -1,18 +1,3 @@
-import PropTypes from "prop-types";
-
-const ChallengeComment = ({ content, nickname }) => {
-  return (
-    <div>
-      <div>{nickname}</div>
-      <div>{content}</div>
-      <hr />
-    </div>
-  );
-};
-
-ChallengeComment.propTypes = {
-  nickname: PropTypes.string,
-  content: PropTypes.string,
-};
-
-export default ChallengeComment;
+version https://git-lfs.github.com/spec/v1
+oid sha256:85a9144038c8b57ea13078ac1f8346a08dcbd58d3e746d82f21522a0b96afc66
+size 1077
