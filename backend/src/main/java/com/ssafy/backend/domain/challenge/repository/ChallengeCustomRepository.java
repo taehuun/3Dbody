@@ -1,10 +1,3 @@
-package com.ssafy.backend.domain.challenge.repository;
-
-import com.ssafy.backend.domain.challenge.dto.ChallengeListResponseDto;
-
-import java.util.List;
-
-public interface ChallengeCustomRepository {
-    // 참여중인 챌린지 목록
-    List<ChallengeListResponseDto> findChallengeWithUserChallenge(Long userId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:14eb7050cd2b95c027c2fefaf8ce22dcfbf29137ec6a36418249e86b78c344e6
+size 317

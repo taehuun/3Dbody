@@ -1,10 +1,3 @@
-package com.ssafy.backend.domain.challenge.repository;
-
-import com.ssafy.backend.domain.challenge.entity.UserChallenge;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-
-public interface UserChallengeRepository extends JpaRepository<UserChallenge, Long>, UserChallengeCustomRepository {
-
-    void deleteAllByChallenge_ChallengeId(Long challengeId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c0be6cbfe751a347d045eb9713da13eeab6ce1911be29221e2482bc88eb9957
+size 365
