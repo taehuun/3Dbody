@@ -1,10 +1,3 @@
-package com.ssafy.backend.domain.food.service;
-
-import com.ssafy.backend.domain.food.dto.FoodListDto;
-import com.ssafy.backend.domain.food.entity.Food;
-
-import java.util.List;
-
-public interface FoodService {
-    public List<FoodListDto> findByNameContaining(String keyword);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:399289967a65dc818085a8d224a36bfe89b9e5b0756c02d864b29391a7b79e92
+size 562
