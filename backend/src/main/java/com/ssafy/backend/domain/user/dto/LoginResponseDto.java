@@ -1,15 +1,3 @@
-package com.ssafy.backend.domain.user.dto;
-
-import com.ssafy.backend.global.jwt.dto.TokenDto;
-import com.ssafy.backend.global.jwt.dto.UserInfoDto;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Getter
-@NoArgsConstructor
-public class LoginResponseDto {
-
-    private UserInfoDto userInfo;
-    private TokenDto token;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f46d6a02aa82a2b66cc8630621e49d96799a3eccf3bfe85f6737667350db537c
+size 414
