@@ -1,23 +1,3 @@
-package com.ssafy.backend.domain.inbody.dto;
-
-import com.ssafy.backend.domain.inbody.entity.InbodyImage;
-
-import java.time.LocalDateTime;
-import java.util.List;
-
-public class InbodyResponseDto {
-
-    private float height;
-    private  float weight;
-    private int bmr;
-    private float muscle;
-    private float fatMass;
-    private float fatPer;
-    private float tbw;
-    private float whr;
-    private float bmi;
-    private int score;
-    private LocalDateTime date;
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:73f5c176720e07d77649404de4c6ee5ed308bbdd7b9da69d3d42768c068acd4c
+size 1516
