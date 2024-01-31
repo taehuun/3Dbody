@@ -1,7 +1,3 @@
-package com.ssafy.backend.domain.food.repository;
-
-import com.ssafy.backend.domain.food.entity.Food;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface FoodRepository extends JpaRepository<Food, Long> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:990e3fca25998d78138b7407051f6bba775febdf0a7c3f40b9bbed35e95c90c4
+size 519
