@@ -1,20 +1,3 @@
-import Modal from "react-modal";
-import { modalState } from "../../recoil/modal/modalState";
-import { useRecoilState } from "recoil";
-
-const BaseModal = () => {
-  const [modal, setModal] = useRecoilState(modalState);
-
-  return (
-    <Modal
-      className={"fixed bottom-0 w-full bg-white"}
-      isOpen={modal}
-      ariaHideApp={false}
-      onRequestClose={() => setModal(false)}
-    >
-      기본
-    </Modal>
-  );
-};
-
-export default BaseModal;
+version https://git-lfs.github.com/spec/v1
+oid sha256:289102f297916e6f69f6e95987636f5095215612d91971a10179968c06e89491
+size 523
