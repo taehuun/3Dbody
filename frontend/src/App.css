@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd06b8e3a849e76e98affd4902708cdd3d62bcb71177fcd4044153763a12228e
-size 99
+button {
+  border: 1px solid black;
+}
+
+input {
+  width: 100%;
+}
+
+.active > svg {
+  color: green;
+}
