@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:688f3458b14c7020dce22697e4b1d6a091750cb67781b782406cacca78262fc7
-size 348
+import { PropTypes } from "prop-types";
+
+const MyInfo = ({ category, data }) => {
+  return (
+    <>
+      <div className="flex justify-between">
+        <div>{category}</div>
+        <div>{data}</div>
+      </div>
+      <hr />
+    </>
+  );
+};
+
+MyInfo.propTypes = {
+  category: PropTypes.string,
+  data: PropTypes.string,
+};
+
+export default MyInfo;

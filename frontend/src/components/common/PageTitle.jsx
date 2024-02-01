@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aefabe564166b646925a18922d3944ff587194549ac9961109fbfbac56c1150c
-size 412
+import PropTypes from "prop-types";
+
+const PageTitle = ({ pageTitle }) => {
+  return (
+    // props로 받아와서 홈, 다이어리, 불러오기 등 단어만 바뀌게
+    // CSS는 다시 해야함
+    <div>
+      <div className='flex justify-center m-4'>
+        {pageTitle}
+      </div>
+      <hr />
+    </div>
+  );
+};
+
+PageTitle.propTypes = {
+  pageTitle: PropTypes.string,
+};
+
+export default PageTitle;
