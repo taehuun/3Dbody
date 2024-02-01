@@ -1,21 +1,3 @@
-package com.ssafy.backend.domain.user.dto;
-
-import com.ssafy.backend.domain.user.entity.User;
-import lombok.Getter;
-import lombok.ToString;
-
-@Getter
-@ToString
-public class SignupRequestDto {
-
-    private String email;
-    private String password;
-    private String name;
-    private User.Gender gender;
-    private String birthDate;
-
-    public User toEntity() {
-        return User.create(email, password, name, gender, birthDate);
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:21b8df2a8a6b164ea06dd7cdf9a20ef4b0fed1440808688677a48b752fcf8c35
+size 443
