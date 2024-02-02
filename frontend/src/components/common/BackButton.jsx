@@ -1,23 +1,3 @@
-import { ChevronLeftIcon } from "@heroicons/react/24/solid";
-import { useNavigate } from "react-router-dom";
-
-const BackButton = () => {
-  const navigate = useNavigate();
-  // 전의 페이지로 옮겨주는 함수 
-  const onClickBtn = () => {
-    navigate(-1);
-    
-  };
-  return (
-    <>
-      <button>
-        <ChevronLeftIcon
-          className="w-6 h-6 text-blue-500"
-          onClick={onClickBtn}
-        />
-      </button>
-    </>
-  );
-};
-
-export default BackButton;
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c2b04525195070691f04c277d57dee6b2ee91d11ff08534732bd80b0be4fcba
+size 478
