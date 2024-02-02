@@ -1,25 +1,3 @@
-package com.ssafy.backend.global.jwt.dto;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
-
-@Getter
-@Builder
-@ToString
-@NoArgsConstructor
-@AllArgsConstructor
-public class TokenDto {
-
-    @JsonProperty("access_token")
-    private String accessToken;
-
-    @JsonProperty("access_token_expired")
-    private long accessTokenExpired;
-
-    @JsonProperty("refresh_token")
-    private String refreshToken;
-
-    @JsonProperty("refresh_token_expired")
-    private long refreshTokenExpired;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0505fef3d89b3ec969e683f18b9e81f2f7e1bdbcf818b8f7f663290fa5a343a1
+size 536
