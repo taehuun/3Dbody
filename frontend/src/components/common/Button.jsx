@@ -1,18 +1,3 @@
-import PropTypes from "prop-types";
-
-const Button = ({ btnCss, onClick, buttonName, type }) => {
-  return (
-    <button className={btnCss} onClick={onClick} type={type}>
-      {buttonName}
-    </button>
-  );
-};
-
-Button.propTypes = {
-  btnCss: PropTypes.string,
-  onClick: PropTypes.func,
-  buttonName: PropTypes.string,
-  type: PropTypes.string,
-};
-
-export default Button;
+version https://git-lfs.github.com/spec/v1
+oid sha256:bf35a5b1c6e339db7019483a41f34401f7cb2dc4e2767cb544a63d1f312eae18
+size 373
