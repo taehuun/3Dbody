@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9feeaa32275e798a897e14a7e2fc2ac77d6a9cbbc19a61c9a2b7ec79fd66c58d
-size 512
+package com.ssafy.backend.domain.inbody.dto;
+
+import com.ssafy.backend.domain.inbody.entity.InbodyImage;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class InbodyImageDto {
+
+    private String url;
+
+    public static InbodyImageDto of(InbodyImage inbodyImage) {
+        return InbodyImageDto.builder()
+                .url(inbodyImage.getUrl())
+                .build();
+    }
+
+
+}
