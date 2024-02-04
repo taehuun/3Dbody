@@ -1,19 +1,3 @@
-import { PropTypes } from "prop-types";
-import { Link } from "react-router-dom";
-
-// 질문 한개에 대한 컴포넌트 
-const FAQ = ({ question }) => {
-  return (
-    <div className="flex justify-center">
-      <div className="flex justify-center content-center w-9/12 rounded-full bg-[#2E6F68] text-white border-2">
-        <Link className="m-2" to="/">{question.title}</Link>
-      </div>
-    </div>
-  );
-};
-
-FAQ.propTypes = {
-  question: PropTypes.object,
-};
-
-export default FAQ;
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ccfd68f761966a698c5eb6ccf615c88a6b0a7df94c1065c96fb1cbb19ba68a5
+size 560
