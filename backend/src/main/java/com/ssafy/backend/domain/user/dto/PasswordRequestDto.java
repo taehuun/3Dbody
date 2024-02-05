@@ -1,20 +1,3 @@
-package com.ssafy.backend.domain.user.dto;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Getter;
-import lombok.ToString;
-
-@Getter
-@ToString
-public class PasswordRequestDto {
-
-    @JsonProperty("current_password")
-    private String currentPassword;
-
-    @JsonProperty("new_password")
-    private String newPassword;
-
-    @JsonProperty("new_password_check")
-    private String newPasswordCheck;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c78cd7b2dea0acebcc507dec54e9683ed49336def4968ec6cdb6bd9e87949a44
+size 420
