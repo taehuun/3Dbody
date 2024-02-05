@@ -1,25 +1,3 @@
-package com.ssafy.backend.domain.inbody.entity;
-
-import com.ssafy.backend.global.entity.BaseEntity;
-import jakarta.persistence.*;
-import lombok.*;
-
-@Entity
-@Getter
-@ToString
-@Builder
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-@AllArgsConstructor
-public class InbodyImage extends BaseEntity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long inbodyImageId;
-
-    @ManyToOne
-    @JoinColumn(name = "inbody_id")
-    private Inbody inbody;
-
-    private String url;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f4c7ceb6a1b849dc79390129e948bbf5737f6f0eaf3817d3c1f240b947575193
+size 504
