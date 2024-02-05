@@ -1,11 +1,3 @@
-package com.ssafy.backend.domain.training.service;
-
-import com.ssafy.backend.domain.training.dto.TrainingResponseDto;
-
-import java.util.List;
-
-public interface TrainingService {
-
-    // 운동 리스트(검색, 카테고리)
-    List<TrainingResponseDto> searchTraining(String category, String keyword);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e963582b7df2ee433544943b915572bf831edda0331eaadd22b3f2c195a25bd
+size 582
