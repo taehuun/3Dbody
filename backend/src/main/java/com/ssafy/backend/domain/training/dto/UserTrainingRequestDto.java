@@ -1,29 +1,3 @@
-package com.ssafy.backend.domain.training.dto;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
-
-import java.time.LocalDate;
-
-@Getter
-@Setter
-@ToString
-public class UserTrainingRequestDto {
-
-    @JsonProperty("user_id")
-    private Long userId;
-
-    @JsonProperty("training_id")
-    private Long trainingId;
-
-    private LocalDate date;
-
-    private int sequence;
-
-    private int sets;
-
-    private float kg;
-
-    private int count;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:386295c3f01e442b312791c7bd61fe737d5f664b045056b76c9427661171eb88
+size 460
