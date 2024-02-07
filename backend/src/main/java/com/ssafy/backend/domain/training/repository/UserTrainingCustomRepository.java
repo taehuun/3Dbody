@@ -1,13 +1,3 @@
-package com.ssafy.backend.domain.training.repository;
-
-import com.ssafy.backend.domain.training.dto.UserTrainingRequestDto;
-import com.ssafy.backend.domain.training.entity.UserTraining;
-
-import java.util.List;
-
-public interface UserTrainingCustomRepository {
-
-    List<UserTraining> findAllWithUserIdAndDate(Long userId, int year, int month, int day);
-
-    void deleteWithUserIdAndTrainingIdAndDate(UserTrainingRequestDto requestDto);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:40f72d6aae695b486b41d7883b21e3bc636d33087c07d01a33ea5525d9a2eaae
+size 572
