@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:214e73dfdbc80da97e404e98e1cbfefeb1ad35f7cb7ac568f67d356ba9c8197e
-size 484
+package com.ssafy.backend.domain.training.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+/**
+ * kg, count 데이터 수정 API에서 사용할 DTO
+ * userTrainingId - 회원운동ID
+ * kg - 무게
+ * count - 횟수
+ */
+@Getter
+@Setter
+@ToString
+public class SetUpdateRequestDto {
+
+    @JsonProperty("user_training_id")
+    private Long userTrainingId;
+
+    private float kg;
+
+    private int count;
+
+}
