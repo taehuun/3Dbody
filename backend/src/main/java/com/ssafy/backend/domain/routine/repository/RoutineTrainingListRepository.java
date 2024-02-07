@@ -1,10 +1,3 @@
-package com.ssafy.backend.domain.routine.repository;
-
-import com.ssafy.backend.domain.routine.entity.RoutineTrainingList;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
-
-public interface RoutineTrainingListRepository extends JpaRepository<RoutineTrainingList, Long> {
-    List<RoutineTrainingList> findAllByRoutineRoutineId(Long routineId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:870e4d7227d3b24e16437d3a7791d4013de78098aae8290f442bc303d1f94062
+size 557
