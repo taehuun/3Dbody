@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca62f90baed5cedfa7b4afcd473446e1fc05e89dea976e5c96691645e16a7ac1
-size 579
+package com.ssafy.backend.global.error.exception;
+
+import lombok.Getter;
+
+@Getter
+public class FileException extends RuntimeException {
+
+    private final ExceptionType exceptionType;
+
+    public FileException(ExceptionType exceptionType) {
+        super(exceptionType.getErrorMessage());
+        this.exceptionType = exceptionType;
+    }
+
+    public int getStatus() {
+        return this.exceptionType.getHttpStatus().value();
+    }
+
+}
