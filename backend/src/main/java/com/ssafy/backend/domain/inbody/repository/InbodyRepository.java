@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb940aa07a655d15a984c4bc66b8a5620bcf18f7efef0f95d62541866b7c3337
-size 363
+package com.ssafy.backend.domain.inbody.repository;
+
+import com.ssafy.backend.domain.inbody.entity.Inbody;
+import com.ssafy.backend.domain.user.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface InbodyRepository extends JpaRepository<Inbody, Long> {
+
+    List<Inbody> findAllByUser(User user);
+
+}
