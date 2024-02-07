@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:220bbcd328dd29302cbefa45dc691cdd22ffa052a9e2056d3cb2446dd990acb8
-size 382
+package com.ssafy.backend.domain.routine.repository;
+
+import com.ssafy.backend.domain.routine.entity.RoutineTrainingList;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface RoutineTrainingListRepository extends JpaRepository<RoutineTrainingList, Long> {
+    List<RoutineTrainingList> findAllByRoutineRoutineId(Long routineId);
+}
