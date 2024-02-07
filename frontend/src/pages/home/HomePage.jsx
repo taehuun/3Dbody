@@ -1,14 +1,3 @@
-import PageTitle from "../../components/common/PageTitle";
-import ToggleTap from "../../components/common/ToggleTap";
-import { toggleModelState } from "../../recoil/common/ToggleState";
-
-const HomePage = () => {
-  return (
-    <>
-      <PageTitle pageTitle={"쓰리디바디 로고"} />
-      <ToggleTap leftTitle={"현재"} rightTitle={"목표"} state={toggleModelState} />
-    </>
-  )
-};
-
-export default HomePage
+version https://git-lfs.github.com/spec/v1
+oid sha256:6bd1748a9b4920214d50c20a2ebc2f0c8dd46a81a9d16fa676ee3670ee698aac
+size 488
