@@ -1,24 +1,3 @@
-package com.ssafy.backend.domain.training.dto;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Builder;
-import lombok.Data;
-
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-
-/**
- *
- */
-@Data
-@Builder
-public class UserTrainingDataResponseDto {
-
-    private LocalDate date;
-
-    @Builder.Default
-    @JsonProperty("user_training_list")
-    private List<UserTrainingResponseDto> userTrainingList = new ArrayList<>();
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f64dc69f2329af3309e498109a80034b582fa1a1525e54ed13dff5c2b12b7b6
+size 567
