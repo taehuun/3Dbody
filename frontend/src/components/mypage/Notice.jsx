@@ -1,17 +1,3 @@
-import { PropTypes } from "prop-types";
-
-// 한 개의 공지에 대한 컴포넌트
-const Notice = ({ notice }) => {
-  return (
-    <div className="flex">
-      <p className='basis-1/3'>{ notice.created_at }</p>
-      <p className='basis-2/3'>{ notice.title }</p>
-    </div>
-  );
-};
-
-Notice.propTypes = {
-  notice: PropTypes.object,
-};
-
-export default Notice;
+version https://git-lfs.github.com/spec/v1
+oid sha256:9e9156e8bc51dc80248ddef639bb240610a31f310acdd94ad8241cf05c9bf591
+size 361
