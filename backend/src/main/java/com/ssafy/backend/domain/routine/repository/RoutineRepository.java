@@ -1,10 +1,3 @@
-package com.ssafy.backend.domain.routine.repository;
-
-import com.ssafy.backend.domain.routine.entity.Routine;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
-
-public interface RoutineRepository extends JpaRepository<Routine, Long> {
-    List<Routine> findAllByUserUserId(Long userId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:373870297e85c833a4e29fb83b4ee2a77ed28542b8cf83ffacfcd2460e628d18
+size 325
