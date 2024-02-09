@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cbe654320587d6e7bbfb8afb1eacf98376abd58ca7145e0ea85fe980ce828725
-size 431
+package com.ssafy.backend.domain.routine.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Builder;
+import lombok.Data;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Data
+@Builder
+public class GetTrainingResponseDto {
+    private Long routineId;
+
+    @Builder.Default
+    @JsonProperty("routine_training_list")
+    private List<RoutineTrainingResponseDto> routineTrainingList = new ArrayList<>();
+}

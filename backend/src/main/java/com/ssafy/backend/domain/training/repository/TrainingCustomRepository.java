@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a595eed6905471815dd4cb16cc668f722820f8d4aca7dc488a9f8068f9ec3ca7
-size 369
+package com.ssafy.backend.domain.training.repository;
+
+import com.ssafy.backend.domain.training.entity.Training;
+
+import java.util.List;
+
+public interface TrainingCustomRepository {
+    List<Training> findAllWithCategoryAndKeyword(String category, String keyword);
+
+    // 운동 이미지 수정
+    void updateWithTrainingIdAndImage(Long trainingId, String image);
+}
