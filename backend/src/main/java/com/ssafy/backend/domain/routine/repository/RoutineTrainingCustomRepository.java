@@ -1,11 +1,3 @@
-package com.ssafy.backend.domain.routine.repository;
-
-import com.ssafy.backend.domain.routine.entity.RoutineTrainingList;
-
-import java.util.List;
-
-public interface RoutineTrainingCustomRepository {
-
-    //루틴 운동 상세 조회
-    List<RoutineTrainingList> findAllWithRoutineId(Long routineId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fff10605cac829126f96b9370bd8a909007a21e9fbb1ffc686977d567618558b
+size 733
