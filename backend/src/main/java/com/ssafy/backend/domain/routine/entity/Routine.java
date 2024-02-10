@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:416fbc4d3d5fcfa0f5b74585c0703f6e1bd8e7e8c0806bb3a580a0920c7e66f7
-size 448
+package com.ssafy.backend.domain.routine.entity;
+
+import com.ssafy.backend.domain.user.entity.User;
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class Routine {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long routineId;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    private String title;
+}

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44e4d45729f54f021ac3b20d65dc88b5e7ffda728a019dbb6354856c175ea531
-size 284
+package com.ssafy.backend.global.file.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+
+@Getter
+public class FileRequestDto {
+
+    @JsonProperty("asset_id")
+    private String assetId;
+
+    @JsonProperty("avatar_url")
+    private String avatarUrl;
+
+}
