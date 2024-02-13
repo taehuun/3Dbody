@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd753bd400549d8efbeb0d77979d25f7c684044a5d23f87894a7b50658c12ed8
-size 264
+const LoadingSpinner = () => {
+  return (
+    <div className="fixed inset-x-0 overflow-auto transform -translate-y-1/2 top-1/2">
+      <img src="/loading/로고흰색배경.gif" alt="" className='w-1/2 mx-auto'/>
+    </div>
+  );
+};
+
+export default LoadingSpinner;

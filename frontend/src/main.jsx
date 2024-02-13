@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:98a5467de38eb64a17b18effaca76057790c49368de6abaf9726cca46c6d980e
-size 430
+import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
+import router from "./router/Router.jsx";
+import "./index.css";
+import { RecoilRoot } from "recoil";
+import { Suspense } from "react";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RecoilRoot>
+    <Suspense>
+      <RouterProvider router={router} fallbackElement={"로딩중!!!!!"} />
+    </Suspense>
+  </RecoilRoot>
+);

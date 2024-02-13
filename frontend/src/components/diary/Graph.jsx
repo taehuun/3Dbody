@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2a1c63952f6f4f2dda4b4d94981d389900b7c1c484001acd1d643f320fcc499e
-size 275
+
+const Graph = () => {
+  // 날짜별 인바디 정보 들고오기
+  // 반복문 돌며 각 수치(컬럼) 그래프로 표현
+  // chart.js
+  return (
+    <>
+      <div className='text-center'>
+        그래프입니다
+      </div>
+    </>
+  );
+};
+
+export default Graph;
