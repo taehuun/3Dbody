@@ -1,16 +1,3 @@
-import ThreeD from "../../components/threedmodel/ThreeD";
-import PageTitle from "../../components/common/PageTitle";
-import ToggleTap from "../../components/common/ToggleTap";
-import { toggleModelState } from "../../recoil/common/ToggleState";
-
-const HomePage = () => {
-  return (
-    <>
-      <PageTitle pageTitle={"쓰리디바디 로고"} />
-      <ToggleTap leftTitle={"현재"} rightTitle={"목표"} state={toggleModelState} />
-      <ThreeD/>
-    </>
-  )
-};
-
-export default HomePage
+version https://git-lfs.github.com/spec/v1
+oid sha256:7cffb2b78fa8510781a4015c654b010ec3aee8f351ae656af75b7af6cedce174
+size 3180
