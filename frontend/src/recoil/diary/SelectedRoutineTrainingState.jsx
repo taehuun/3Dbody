@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0ef417f1e611503b4cb59c0a39f85d11c25700759ecc3bd018b48f6cc73db56c
-size 221
+import { atom } from "recoil";
+
+const selectedRoutineTrainingState = atom({ // 루틴에 추가할 운동 목록 (id만)
+  key: "selectedRoutineTrainingState",
+  default: [],
+});
+
+export { selectedRoutineTrainingState };

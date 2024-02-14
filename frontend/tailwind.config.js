@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21c9a6b19bcc4ffab653eaffd8b3466242632286ee11cef80409b7d900954c0e
-size 154
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
