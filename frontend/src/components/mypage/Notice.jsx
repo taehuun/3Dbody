@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5a58c2ab27c6a56713a302863750d51c6b6e6845d160e368bb6fc0255dac9e8
-size 453
+import { PropTypes } from "prop-types";
+
+// 한 개의 공지에 대한 컴포넌트
+const Notice = ({ notice }) => {
+  const createdAt  = notice.createdAt.substring(0, 10)
+  return (
+    <div className="flex p-2 text-white bg-teal-700 border rounded-xl">
+      <p className='basis-1/3'>{ createdAt }</p>
+      <p className='basis-2/3'>{ notice.title }</p>
+    </div>
+  );
+};
+
+Notice.propTypes = {
+  notice: PropTypes.object,
+};
+
+export default Notice;
