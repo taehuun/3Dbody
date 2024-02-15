@@ -1,15 +1,3 @@
-import ChartBodyComposition from "./ChartBodyComposition";
-import ChartWeight from "./ChartWeight";
-
-const Graph = () => {
-  return (
-    <div className="bg-[#C9DECF]/30 pb-20">
-      <div className="flex flex-col gap-10">
-        <ChartWeight />
-        <ChartBodyComposition />
-      </div>
-    </div>
-  );
-};
-
-export default Graph;
+version https://git-lfs.github.com/spec/v1
+oid sha256:817b31fa8e5ccad5994efacf39bc94bab02bf24bd6299cbb517602d4176c5705
+size 335

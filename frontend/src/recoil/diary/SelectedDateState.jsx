@@ -1,15 +1,3 @@
-import { atom } from "recoil";
-
-const today = new Date();
-
-const selectedDateState = atom({
-  key: "selectedDateState", // 선택한 날의 연, 월, 일
-  default: [today.getFullYear(), today.getMonth() + 1, today.getDate()],
-});
-
-const selectedDayState = atom({
-  key: "selectedDayState", // 선택한 날의 요일 정보
-  default: "",
-});
-
-export { selectedDateState, selectedDayState };
+version https://git-lfs.github.com/spec/v1
+oid sha256:61c8717063c5964e90f2ce75cb76442c621220163e60f0e3f91b4a23e6dc29ca
+size 393

@@ -1,5 +1,3 @@
-import product1Image from "./product1.png";
-import product2Image from "./product2.png";
-import product3Image from "./product3.png";
-
-export { product1Image, product2Image, product3Image };
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e459e20ed98d22a509506ce4361a8ff062d15b6d9957651c34c23a7a8809806
+size 189
