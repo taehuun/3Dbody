@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:024349c585944e6d5039a5d3bdefd17d8acd0aa52da946c1b77489fd8b2a620e
-size 463
+{"name":"3D BODY","short_name":"3D BODY","start_url":"/","display":"standalone","background_color":"#ffffff","lang":"en","scope":"/","theme_color":"#ffffff","icons":[{"src":"pwa-64x64.png","sizes":"64x64","type":"image/png"},{"src":"pwa-192x192.png","sizes":"192x192","type":"image/png"},{"src":"pwa-512x512.png","sizes":"512x512","type":"image/png","purpose":"any"},{"src":"maskable-icon-512x512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}]}
