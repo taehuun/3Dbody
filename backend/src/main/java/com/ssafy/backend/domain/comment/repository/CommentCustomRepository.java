@@ -1,14 +1,3 @@
-package com.ssafy.backend.domain.comment.repository;
-
-import com.ssafy.backend.domain.comment.entity.Comment;
-
-import java.util.List;
-import java.util.Optional;
-
-public interface CommentCustomRepository {
-
-    // 챌린지 댓글 목록
-    List<Comment> findByChallengeId(Long challengeId);
-
-    Optional<Comment> findCommentByIdWithParent(Long commentId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d2af70cfe8567c7f059801c98f24a19b430f748c5d7e21ba28d5366aef27be6
+size 443
