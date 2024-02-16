@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:46782ad1063d2092e94b408a7695b82772ac91c92ac6aa54fb9497b5fb6ea33c
-size 691
+package com.ssafy.backend.domain.routine.entity;
+
+import com.ssafy.backend.domain.training.entity.Training;
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class RoutineTrainingList {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long RoutineTrainingListId;
+
+    @ManyToOne
+    @JoinColumn(name = "training_id")
+    private Training training; // 운동 ID
+
+    @ManyToOne
+    @JoinColumn(name = "Routine_id")
+    private Routine routine; // 루틴 ID
+
+    private String name;
+    private int sequence;
+    private float kg;
+    private int count;
+    private int sets;
+}

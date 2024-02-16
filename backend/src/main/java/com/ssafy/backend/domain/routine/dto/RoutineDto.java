@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:53179193380f36b94e8f7827c123cd05e613ae3c68aafb4dfe58eb982d41bdd8
-size 618
+package com.ssafy.backend.domain.routine.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.ssafy.backend.domain.routine.entity.Routine;
+import lombok.*;
+
+@Getter
+@Setter
+@Builder
+@ToString
+public class RoutineDto {
+
+    private Long routineId;
+    @JsonProperty("user_id")
+    private Long userId;
+    private String title;
+
+    public static RoutineDto toDto(Routine routine){
+        return RoutineDto.builder()
+                .routineId(routine.getRoutineId())
+                .userId(routine.getUser().getUserId())
+                .title(routine.getTitle())
+                .build();
+    }
+}

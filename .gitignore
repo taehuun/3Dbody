@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41aaa6b09b7426cb920050b16d51faa082c1f281c4dc1e7cf187bebe41e01d51
-size 615
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### application.yml ###
+##**/application.yml
+##**/application.properties
+
+### 전역에서 일치하는 파일 안잡히게 하는거 ###
+#application*.yml
+.env
+.DS_Store

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8807a5479240f8180acf16f058c1e9ff83168b5da9158fd1531d405941d41a2c
-size 552
+package com.ssafy.backend.domain.inbody.service;
+
+import com.ssafy.backend.domain.inbody.dto.InbodyRequestDto;
+import com.ssafy.backend.domain.inbody.dto.InbodyResponseDto;
+
+import java.util.List;
+
+public interface InbodyService {
+
+    void registInbody(Long userId, InbodyRequestDto inbodyRequestDto);
+    void updateInbody(Long userId, Long inbodyId, InbodyRequestDto inbodyRequestDto);
+    InbodyResponseDto getInbodyItem(Long inbodyId);
+    List<InbodyResponseDto>  getInbodyList(Long userId);
+    void deleteInbody(Long userId, Long inbodyId);
+
+}

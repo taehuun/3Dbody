@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:990e3fca25998d78138b7407051f6bba775febdf0a7c3f40b9bbed35e95c90c4
-size 519
+package com.ssafy.backend.domain.food.repository;
+
+import com.ssafy.backend.domain.food.dto.FoodListDto;
+import com.ssafy.backend.domain.food.entity.Food;
+import io.lettuce.core.dynamic.annotation.Param;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+public interface FoodRepository extends JpaRepository<Food, Long> {
+
+    List<Food> findByNameContaining(String keyword);
+}

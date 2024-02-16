@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:77ab1416f310eb7b88e04e89afdd6bd4f0cbaf9187377a22de3c55728db8045f
-size 1562
+package com.ssafy.backend.domain.routine.repository;
+
+import com.ssafy.backend.domain.routine.dto.RoutineSetRequestDto;
+import com.ssafy.backend.domain.routine.dto.RoutineTrainingRequestDto;
+import com.ssafy.backend.domain.routine.entity.RoutineTrainingList;
+import io.lettuce.core.dynamic.annotation.Param;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+public interface RoutineTrainingListRepository extends JpaRepository<RoutineTrainingList, Long>, RoutineTrainingCustomRepository {
+    //루틴 내 운동 상세 검색
+    @Query("SELECT r FROM RoutineTrainingList r WHERE r.routine.routineId = :routineId")
+    List<RoutineTrainingList> findAllByroutineTrainingListRoutineId(@Param("routineId") Long routineId);
+    //루틴 리스트 검색
+    List<RoutineTrainingList> findAllByRoutineRoutineId(Long routineId);
+
+    @Transactional
+    @Modifying
+    @Query("DELETE FROM RoutineTrainingList r WHERE r.routine.routineId = :routineId")
+    void deleteAllByRoutineId(@Param("routineId") Long routineId);
+
+    @Transactional
+    @Modifying
+    @Query("UPDATE RoutineTrainingList r SET r.kg = :kg, r.count = :count WHERE r.RoutineTrainingListId = :RoutineTrainingListId")
+    void updateWithRoutineTrainingListIdAndKgAndCount(@Param("RoutineTrainingListId") Long RoutineTrainingListId, @Param("kg") float kg, @Param("count") int count);
+
+
+}

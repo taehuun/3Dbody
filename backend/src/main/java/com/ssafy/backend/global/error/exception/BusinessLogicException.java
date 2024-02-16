@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b4892b54cfe61d4ac1759f73e8d6fdab25da4f06f374d616228ae28546fb0b4a
-size 637
+package com.ssafy.backend.global.error.exception;
+
+import lombok.Getter;
+
+@Getter
+public class BusinessLogicException extends RuntimeException {
+
+    private final ExceptionType exceptionType;
+
+    public BusinessLogicException(ExceptionType exceptionType) {
+        super(exceptionType.getErrorMessage());
+        this.exceptionType = exceptionType;
+    }
+
+    public BusinessLogicException(ExceptionType exceptionType, Throwable ex) {
+        super(exceptionType.getErrorMessage(), ex);
+        this.exceptionType = exceptionType;
+    }
+
+    public int getStatus() {
+        return this.exceptionType.getHttpStatus().value();
+    }
+
+}
